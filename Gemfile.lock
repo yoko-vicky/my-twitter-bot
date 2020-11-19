@@ -5,32 +5,29 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
     buftok (0.2.0)
-    chatterbot (2.0.5)
-      colorize (>= 0.7.3)
-      launchy (>= 2.4.2)
-      oauth (~> 0.4.7)
-      twitter (~> 6.2.0)
-    colorize (0.8.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
-    http (3.3.0)
+    ffi (1.13.1)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
+    http (4.4.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
-      http-form_data (~> 2.0)
-      http_parser.rb (~> 0.6.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
+    http-parser (1.2.2)
+      ffi-compiler
     http_parser.rb (0.6.0)
     jaro_winkler (1.5.4)
-    launchy (2.5.0)
-      addressable (~> 2.7)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     multipart-post (2.1.1)
     naught (1.1.0)
-    oauth (0.4.7)
     parallel (1.20.0)
     parser (2.7.2.0)
       ast (~> 2.4.1)
@@ -49,11 +46,11 @@ GEM
     ruby-progressbar (1.10.1)
     simple_oauth (0.3.1)
     thread_safe (0.3.6)
-    twitter (6.2.0)
+    twitter (7.0.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.11)
-      http (~> 3.0)
+      http (~> 4.0)
       http-form_data (~> 2.0)
       http_parser.rb (~> 0.6.0)
       memoizable (~> 0.4.0)
@@ -69,9 +66,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  chatterbot
-  rake
   rubocop (~> 0.81.0)
+  twitter (~> 7.0)
 
 BUNDLED WITH
    2.1.4

@@ -1,6 +1,6 @@
 # spec/twitterbot_spec.rb
 # rubocop:disable Layout/LineLength
-require '../lib/my_tweets.rb'
+require_relative '../lib/my_tweets.rb'
 
 describe MyTweets do
   let(:my_tweets) { MyTweets.new }

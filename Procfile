@@ -1,1 +1,1 @@
-bot: ruby my_quotes_bot.rb
+bot: ruby ./bin/main.rb
