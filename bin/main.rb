@@ -11,6 +11,6 @@ end
 
 loop do
   mytweets = MyTweets.new
-  client.update mytweets.pickup_quote + mytweets.pickup_emoji
+  client.update mytweets.pickup_quote + mytweets.pickup_emoji + 'HEHEHE'
   sleep 3600
 end
