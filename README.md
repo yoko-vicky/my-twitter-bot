@@ -3,9 +3,7 @@
 ![Top Page Screenshot](./screenshot.png)
 
 ## About the Project
-This project is for building my own Twitter bot that publishes different famous quotes with a random emoji on Twitter feed every hour. It's built with a [Twitter gem](https://github.com/sferik/twitter).
-
-This application can be run on your local PC, and also you can deploy it with [Heroku](https://www.heroku.com/).
+This project is for building my own Twitter bot that publishes different famous quotes with a random emoji on Twitter feed every hour. It's built with a [Twitter gem](https://github.com/sferik/twitter). This application can be run on your local PC, and also you can deploy it with [Heroku](https://www.heroku.com/).
 
 A list of commonly used resources that I find helpful is listed in the acknowledgments.
 
@@ -65,7 +63,7 @@ e.g. $ git clone https://github.com/yourUsername/yourProjectName
 1. Create your Twitter App following the above section
 2. On your computer, open the terminal and go to the project folder  eg: `cd Desktop/my-twitter-bot`
 3. On your terminal, enter `bundle install`
-4. Go to bin/main.rb and replace ENV['...'] into your real Keys and tokens that you just saved in the [above direction](#create-twitter-app-and-get-token-&-keys)
+4. Go to bin/main.rb and replace ENV['...'] into your real Keys and tokens that you just saved in the step 8 on [above direction](#create-twitter-app-and-get-token--keys)
 5. Enter `ruby ./bin/main.rb` to run the code
 6. Go to your Twitter feed and check if the tweet is correctly tweeted
 
@@ -78,14 +76,17 @@ eg: `git remote add YOUR_REPOSITORY_PATH`
 3. Login or create an account for [Heroku](https://www.heroku.com/)
 4. Go to the [personal dashboard](https://dashboard.heroku.com/apps) and click "New > Create new app"
 5. Enter the App name and create it
-6. Go to "Config Vars" in the "Settings" tab, and add your Twitter App's keys and tokens
-7. Go to "Deployment method" in the "Deploy" tab, and connect your Github repo
-8. Click deploy and check your Twitter account and it publishes your bot tweet
+6. Go to "Config Vars" in the "Settings" tab, and add your Twitter App's keys and tokens that you just saved in the step 8 on [above direction](#create-twitter-app-and-get-token--keys)
+7. On your bin/main.rb file, replace the client config from real keys and tokens to like 'ENV['KEYS TITLE']'
+8. Now, commit your files and push it to your Github repository 
+eg: `git add -A`, `git commit -m "some comments"`, `git push origin branch_name`
+9. Go to "Deployment method" in the "Deploy" tab, and connect your Github repo of your project
+10. Click deploy and check your Twitter account to make sure if it publishes your bot tweet correctly
 
 
 ### How to change the time interval
 
-1. Go to the line `sleep` inside a loop in my_quotes_bot.rb
+1. Go to the line `sleep` inside a loop in bin/main.rb
 2. Now, it's set 3600 that means it's done every 1 hour, you can change the number whatever you like to set the interval
 3. It's based on the second, so if you want to post your tweet every 1 min, you can change the number to 60 eg: `sleep 60`
 
@@ -121,7 +122,6 @@ This project is [MIT](./LICENSE) licensed.
 
 
 ## Acknowledgements
-* [chatterbot](https://github.com/muffinista/chatterbot)
 * [Twitter gem](https://github.com/sferik/twitter)
 * [Emojipedia](https://emojipedia.org/emoji/)
 * [Heroku](https://www.heroku.com/)
