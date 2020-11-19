@@ -12,11 +12,19 @@ describe MyTweets do
     it 'returns picked up emoji from the emojis array' do
       expect(emojis).to include(my_tweets.pickup_emoji)
     end
+
+    it 'occurs error if call it without receiver' do
+      expect { pickup_emoji }.to raise_error(NameError)
+    end
   end
 
   describe '#pickup_quote' do
     it 'returns picked up quote from the quotes array' do
       expect(quotes).to include(my_tweets.pickup_quote)
+    end
+
+    it 'occurs error if call it without receiver' do
+      expect { pickup_quote }.to raise_error(NameError)
     end
   end
 end
