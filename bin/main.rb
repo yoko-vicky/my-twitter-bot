@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'twitter'
-require_relative '../lib/my_tweets.rb'
+require_relative '../lib/my_tweets'
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = ENV['CONSUMER_KEY']
