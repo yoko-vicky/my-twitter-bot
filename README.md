@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 # Twitter Quotes Bot
 ![Top Page Screenshot](./screenshot.png)
 
