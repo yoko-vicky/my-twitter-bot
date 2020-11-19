@@ -16,7 +16,8 @@ end
 loop do
   mytweets = MyTweets.new
   client.update mytweets.pickup_quote + mytweets.pickup_emoji
-  sleep 3600
+  # sleep 3600
+  sleep 120
 end
 
 #
