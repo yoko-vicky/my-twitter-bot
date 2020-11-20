@@ -1,5 +1,5 @@
 # Twitter Quotes Bot
-![Top Page Screenshot](./screenshot.png)
+![Top Page Screenshot](./screenshot2.png)
 
 ## About the Project
 This project is for building my own Twitter bot that publishes different famous quotes with a random emoji on Twitter feed every hour. It's built with a [Twitter gem](https://github.com/sferik/twitter). This application can be run on your local PC, and also you can deploy it with [Heroku](https://www.heroku.com/).
